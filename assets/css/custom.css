@@ -2593,4 +2593,8 @@ body {
 a.page-numbers:hover {
   background: #f9f9f9; }
 
+/* Custom Ubermenu */
+#ubermenu-nav-main-137-megamenu li a {
+  justify-content: center; }
+
 /*# sourceMappingURL=custom.css.map */
