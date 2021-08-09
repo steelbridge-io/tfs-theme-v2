@@ -29,7 +29,7 @@ get_header(); ?>
     <img src="<?php echo $the_post_img['0']; ?>" class="paralaxed img-responsive-width-100 center-block">
     
     <div class="center-content-flex template-header-content">
-      <div class="basicpagelogo signature-header template-class text-center">
+      <div class="basicpagelogo signature-header template-class mega-menu text-center">
         
         <div class="inner">
           <dl class="landing-hd">

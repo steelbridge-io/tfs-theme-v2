@@ -336,6 +336,10 @@ function the_fly_shop_scripts() {
     wp_enqueue_style('slide-out-nav', get_template_directory_uri() . '/assets/css/slide-out-nav.css');
     
    }
+   
+   if(function_exists('ubermenu')) {
+    wp_enqueue_style('uber-menu-nav', get_template_directory_uri() . '/assets/css/mega-menu-nav.css');
+   }
     
     wp_register_style( 'dashicons-tfs', get_template_directory_uri(). '/assets/css/dashicons.min.css');
     wp_enqueue_style( 'dashicons-tfs' );
