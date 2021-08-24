@@ -1035,7 +1035,8 @@ h2.logo-tel {
   z-index: 99;
   position: absolute;
   width:100%;
-  top: 50%
+  top: 50%;
+  bottom: 50%;
 }
 .img-responsive-logo {
   display: block;
@@ -2003,9 +2004,8 @@ nav.navigation.post-navigation {
 @media ( max-width: 800px ) {
 
 }
-@media ( max-width: 768px ) {
+@media ( max-width: 768px ) {}
 
-}
 @media (max-width: 600px) {
 
   .photo-box .image-wrap img {

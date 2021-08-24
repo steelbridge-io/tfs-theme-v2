@@ -956,7 +956,8 @@ h2.logo-tel {
   z-index: 99;
   position: absolute;
   width: 100%;
-  top: 50%; }
+  top: 50%;
+  bottom: 50%; }
 
 .img-responsive-logo {
   display: block;
