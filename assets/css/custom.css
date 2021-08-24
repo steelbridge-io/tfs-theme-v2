@@ -2280,7 +2280,7 @@ div.ctct-form-embed form.ctct-form-custom label.ctct-form-label {
 /** SCSS Global Properties
 =========================== */
 body {
-  overflow: auto; }
+  overflow: hidden; }
 
 #scrollto {
   color: #f5f5f5; }
