@@ -1,5 +1,20 @@
 /* CSS conditionally loaded when Mega Menu is active */
 
+@media ( max-width: 823.99px) and (min-width: 811.99px) {
+    .scrollto.animated.animatedFadeInUp.fadeInUp {
+        display: none;
+    }
+    .dd-1 .img-responsive-logo {
+        max-width: 23vw;
+        transition: 0.5s;
+    }
+    .template-header-content {
+        top: 18%;
+        bottom: 0;
+        transition: 0.5s;
+    }
+}
+
 @media ( max-width: 768px ) {
     .center-content-flex {
         height: 30%;
@@ -21,6 +36,22 @@
     }
     .center-content-flex {
         height: 35%;
+        transition: 0.5s;
+    }
+}
+
+@media (max-width: 640.99px) and (min-width: 640px) {
+    .center-content-flex {
+        height: 26%;
+        transition: 0.5s;
+    }
+    .dd-1 .img-responsive-logo {
+        max-width: 27vw;
+        transition: 0.5s;
+    }
+    .template-header-content {
+        top: 51%;
+        bottom: 22%;
         transition: 0.5s;
     }
 }
@@ -53,6 +84,10 @@
         max-width: 40vw;
         transition: 0.5s;
     }
+}
+
+@media (max-width: 375px) {
+
 }
 
 @media (max-width: 320px) {
