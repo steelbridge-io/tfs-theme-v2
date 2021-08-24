@@ -1311,7 +1311,7 @@ nav#nav {
 /* Scroll To ID
 -------------------------------- */
 .scrollto a {
-  color: #f5f5f5;
+  color: #f5f5f5 !important;
   text-decoration: none;
 
   & :hover {
