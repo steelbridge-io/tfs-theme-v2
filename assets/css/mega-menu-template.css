@@ -19,6 +19,10 @@
         max-width: 35vw;
         transition: 0.5s;
     }
+    .center-content-flex {
+        height: 35%;
+        transition: 0.5s;
+    }
 }
 
 @media (max-width: 568px) {
