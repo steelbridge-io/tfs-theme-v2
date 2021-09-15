@@ -15,13 +15,13 @@ function load_travel_css() {
   $travel_fa_arrows     = get_theme_mod ('travel_fa_arrows');
 	
 	if (is_page_template('page-templates/travel-template.php')) {
-		$css_travel .= ' 
+		$css_travel .= '
 		
 		.travel_bg_color {
 				background: ' . $travel_bg_color . ';
 			}
 			
-		.staff-text-color h3.widget-title, .staff-text-color p { 
+		.staff-text-color h3.widget-title, .staff-text-color p {
 			color: ' . $travel_text_color . ';
 		}
 		
@@ -29,13 +29,13 @@ function load_travel_css() {
 			background-color: ' . $sth_bg_color . ';
 		}
 		
-		#setthehook-title h2, p.setthehook-p {
+		#setthehook-title h2, .travel.setthehook-p {
 			color: '. $sth_text_color .';
 		}
 		
 		.setthehook1 #setthehook1 strong,
 		.setthehook1 #setthehook1 em,
-		.setthehook1 #setthehook1 b 
+		.setthehook1 #setthehook1 b
 		.setthehook1 #setthehook1 ul li {
   		color:'. $sth_text_color .';
 		}

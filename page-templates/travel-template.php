@@ -214,7 +214,6 @@ get_header();?>
                     </div>
                   </div>
                 </div>
-              
               </div>
             </div>
           </div>
@@ -241,7 +240,7 @@ get_header();?>
         
         <?php else: ?>
           
-          <img src="<?php echo $feature_3_gettingto_image;?>" alt="The Fly Shop Travel Image" />
+          <img src="<?php echo $feature_3_gettingto_image; ?>" alt="The Fly Shop Travel Image" />
         
         <?php endif; ?>
       
