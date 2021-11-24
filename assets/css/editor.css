@@ -1,15 +1,72 @@
-/**
- * #.# Editor Styles
- *
- * CSS for just Backend enqueued after style.scss
- * which makes it higher in priority.
- */
-.wp-block-cgb-block-call-to-action {
-  background: #00A878;
-  border: 0.2rem solid #000;
-  color: #000;
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 2rem; }
+/*
+Error: Undefined variable: "$green".
+        on line 9 of editor.scss
 
-/*# sourceMappingURL=editor.css.map */
+4:  * CSS for just Backend enqueued after style.scss
+5:  * which makes it higher in priority.
+6:  *\/
+7: 
+8: .wp-block-cgb-block-ubermenu  {
+9:   background: $green;
+10:   border: 0.2rem solid $black;
+11:   color: $black;
+12:   margin: 0 auto;
+13:   max-width: 740px;
+14:   padding: 2rem;
+
+Backtrace:
+editor.scss:9
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/stack.rb:79:in `block in with_base'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/stack.rb:79:in `with_base'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:440:in `map'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/stack.rb:79:in `block in with_base'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/stack.rb:79:in `with_base'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/exec/sass_scss.rb:338:in `watch_or_update'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/exec/base.rb:50:in `parse'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/lib/sass/exec/base.rb:18:in `parse!'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/gems/sass-3.7.3/bin/sass:13:in `<top (required)>'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/bin/sass:23:in `load'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/bin/sass:23:in `<main>'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/bin/ruby_executable_hooks:15:in `eval'
+/Users/chrisparsons/.rvm/gems/ruby-2.4.2/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$green\".\A         on line 9 of editor.scss\A \A 4:  * CSS for just Backend enqueued after style.scss\A 5:  * which makes it higher in priority.\A 6:  */\A 7: \A 8: .wp-block-cgb-block-ubermenu  {\A 9:   background: $green;\A 10:   border: 0.2rem solid $black;\A 11:   color: $black;\A 12:   margin: 0 auto;\A 13:   max-width: 740px;\A 14:   padding: 2rem;"; }
