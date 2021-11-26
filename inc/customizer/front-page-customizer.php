@@ -13,11 +13,35 @@ $wp_customize -> add_section(
 	)
 );
 
+// Creates custom Hero Video field for Front Page
+	$wp_customize -> add_setting ( 'front-page-hero-video', array(
+		'default'           => '',
+		'type'              => 'theme_mod',
+		'transport'         => 'postMessage',
+		//'sanitize_callback' => 'themeslug_sanitize_url'
+	));
+	$wp_customize -> add_control (
+		new WP_Customize_Control (
+			$wp_customize,
+			'front-page-hero-video',
+			array (
+				'label'             => __('Front Page Hero Video'),
+				'type'              => 'url',
+				'section'           => 'tfs_front_page',
+				'settings'          => 'front-page-hero-video',
+				'priority'          => 10,
+				'sanitize_callback' => 'esc_url_raw',
+				'active_callback'   => function() {return is_page_template('page-templates/front-page-template.php');}
+			
+			)
+		)
+	);
+	
 // Creates custom Hero Image field for Front Page
     $wp_customize -> add_setting ( 'front-page-hero-image', array(
         'default'           => '',
         'type'              => 'theme_mod',
-        'transport'         => 'postMessage'   
+        'transport'         => 'postMessage'
     ));
     $wp_customize -> add_control (
     new WP_Customize_Image_Control (
@@ -286,5 +310,4 @@ $wp_customize -> add_section(
 			)
 		)
 	);
-	
 	
