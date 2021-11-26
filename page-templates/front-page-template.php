@@ -21,12 +21,46 @@ get_header(); ?>
   <!-- The .banner hack is used with the Theme Customizer feature. Because JQuery does not target pseudo elements, we can target a class in the DOM and change it to a <style> element -->
   <span class="bannerhack"></span>
   <section id="banner">
-    <div class="inner">
-      <img src="<?php echo $front_page_logo;	?>" class="img-responsive center-block" align="center" alt="The Fly Shop">
-      <h2 class="site-description"><?php bloginfo('description'); ?></h2>
-      <h3><?php echo get_theme_mod('telephone_number'); ?></h3>
+
+<?php
+ 
+ $default = '';
+ $front_page_hero_video      = get_theme_mod ('front-page-hero-video');
+ 
+ if (is_front_page() && get_theme_mod('front-page-hero-video') !== $default ) : ?>
+  
+    <div class="video">
+     <div class="overlay"></div>
+     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <!-- <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4"> -->
+      <source src="<?php echo $front_page_hero_video ?>" type="video/mp4">
+     </video>
+     
+     <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+       <div class="w-100 text-white">
+ 
+        <img src="<?php echo $front_page_logo;	?>" class="img-responsive center-block" align="center" alt="The Fly Shop">
+        <h2 class="site-description"><?php bloginfo('description'); ?></h2>
+        <h3><?php echo get_theme_mod('telephone_number'); ?></h3>
+        <a href="#main" class="more scrolly">Learn More</a>
+        
+       </div>
+      </div>
+     </div>
     </div>
-    <a href="#main" class="more scrolly">Learn More</a>
+  
+  <?php else : ?>
+ 
+  <div class="inner">
+   <img src="<?php echo $front_page_logo;	?>" class="img-responsive center-block" align="center" alt="The Fly Shop">
+   <h2 class="site-description"><?php bloginfo('description'); ?></h2>
+   <h3><?php echo get_theme_mod('telephone_number'); ?></h3>
+  </div>
+  <a href="#main" class="more scrolly">Learn More</a>
+  
+  <?php endif; ?>
+  
   </section>
   <article id="main">
     <!-- === JOIN NEWS LETTER === -->
